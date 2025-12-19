@@ -1,0 +1,402 @@
+/* ========================================
+   회사소개 페이지 전용 스타일
+   ======================================== */
+
+/* 대표 인사말 */
+.ceo-message {
+    padding: var(--spacing-xxl) 0;
+}
+
+.ceo-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.ceo-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.ceo-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.ceo-text {
+    padding: var(--spacing-md);
+}
+
+.ceo-greeting {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ceo-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.ceo-text p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.ceo-signature {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 2px solid var(--border-color);
+}
+
+.ceo-signature p {
+    font-size: 1.125rem;
+    color: var(--text-primary);
+}
+
+.ceo-signature strong {
+    font-weight: 600;
+    margin-right: var(--spacing-xs);
+}
+
+/* 연혁 타임라인 */
+.history {
+    padding: var(--spacing-xxl) 0;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding: var(--spacing-lg) 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 150px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-light));
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.timeline-year {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: right;
+    padding-right: var(--spacing-lg);
+    position: relative;
+}
+
+.timeline-year::after {
+    content: '';
+    position: absolute;
+    right: -21px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border: 4px solid var(--background-white);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--background-gray);
+}
+
+.timeline-content {
+    background-color: var(--background-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.timeline-content ul {
+    list-style: none;
+}
+
+.timeline-content ul li {
+    font-size: 1.0625rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.timeline-content ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* 핵심 역량 */
+.competencies {
+    padding: var(--spacing-xxl) 0;
+}
+
+.competencies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.competency-card {
+    background-color: var(--background-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.competency-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.competency-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--background-white);
+}
+
+.competency-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.competency-card > p {
+    font-size: 1.0625rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.competency-features {
+    list-style: none;
+    margin-top: var(--spacing-md);
+}
+
+.competency-features li {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.competency-features li i {
+    color: var(--primary-color);
+    font-size: 0.875rem;
+}
+
+/* 실적 통계 상세 */
+.stats-detail {
+    padding: var(--spacing-xxl) 0;
+}
+
+.stats-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.stat-detail-card {
+    background-color: var(--background-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.stat-detail-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-detail-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--background-white);
+}
+
+.stat-detail-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-detail-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.stat-detail-desc {
+    font-size: 0.938rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* 인증 및 수상 */
+.certifications {
+    padding: var(--spacing-xxl) 0;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.certification-card {
+    background-color: var(--background-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.certification-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.certification-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--background-white);
+}
+
+.certification-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.certification-card p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+/* 반응형 디자인 - 태블릿 */
+@media (max-width: 1024px) {
+    .ceo-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .ceo-image img {
+        height: 400px;
+    }
+    
+    .competencies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-detail-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 반응형 디자인 - 모바일 */
+@media (max-width: 768px) {
+    .ceo-title {
+        font-size: 1.5rem;
+    }
+    
+    .ceo-text p {
+        font-size: 1rem;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        padding-left: 50px;
+    }
+    
+    .timeline-year {
+        text-align: left;
+        font-size: 1.5rem;
+        padding-right: 0;
+    }
+    
+    .timeline-year::after {
+        left: -36px;
+        right: auto;
+    }
+    
+    .stats-detail-grid,
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-detail-number {
+        font-size: 2.5rem;
+    }
+}

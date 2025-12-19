@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B2B 상업용 인테리어 견적 문의 - 24시간 내 답변">
+    <title>견적 문의 - PREMIUM INTERIOR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 & 네비게이션 -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>PREMIUM INTERIOR</h1>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">회사소개</a></li>
+                    <li><a href="services.html">서비스</a></li>
+                    <li><a href="portfolio.html">포트폴리오</a></li>
+                    <li><a href="contact.html" class="active">견적문의</a></li>
+                    <li><a href="recruiting.html">채용</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 페이지 헤더 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">견적 문의</h1>
+            <p class="page-subtitle">24시간 내 신속하게 답변드리겠습니다</p>
+        </div>
+    </section>
+
+    <!-- 문의 섹션 -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- 좌측: 문의 폼 -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>프로젝트 상담 신청</h2>
+                        <p>상세한 정보를 입력해주시면 맞춤 견적을 제공해드립니다</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="companyName">기업명 <span class="required">*</span></label>
+                                <input type="text" id="companyName" name="companyName" required placeholder="예: (주)프리미엄">
+                            </div>
+                            <div class="form-group">
+                                <label for="industry">업종 <span class="required">*</span></label>
+                                <select id="industry" name="industry" required>
+                                    <option value="">선택하세요</option>
+                                    <option value="tech">IT/기술</option>
+                                    <option value="finance">금융/보험</option>
+                                    <option value="retail">리테일/유통</option>
+                                    <option value="fnb">외식업/F&B</option>
+                                    <option value="medical">의료/헬스케어</option>
+                                    <option value="education">교육</option>
+                                    <option value="other">기타</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">담당자명 <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="contactName" required placeholder="홍길동">
+                            </div>
+                            <div class="form-group">
+                                <label for="position">직책</label>
+                                <input type="text" id="position" name="position" placeholder="예: 시설팀장">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">연락처 <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="010-0000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">이메일 <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="example@company.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectType">프로젝트 유형 <span class="required">*</span></label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">선택하세요</option>
+                                <option value="office">오피스 인테리어</option>
+                                <option value="retail">리테일/프랜차이즈</option>
+                                <option value="fnb">F&B 체인</option>
+                                <option value="medical">병원/클리닉</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="location">위치 <span class="required">*</span></label>
+                                <input type="text" id="location" name="location" required placeholder="서울시 강남구">
+                            </div>
+                            <div class="form-group">
+                                <label for="area">면적 (평) <span class="required">*</span></label>
+                                <input type="text" id="area" name="area" required placeholder="예: 100평">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">예산 범위</label>
+                                <select id="budget" name="budget">
+                                    <option value="">선택하세요</option>
+                                    <option value="under50">5천만원 이하</option>
+                                    <option value="50-100">5천만원 ~ 1억</option>
+                                    <option value="100-200">1억 ~ 2억</option>
+                                    <option value="200-300">2억 ~ 3억</option>
+                                    <option value="over300">3억 이상</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">희망 일정</label>
+                                <input type="text" id="timeline" name="timeline" placeholder="예: 2024년 12월">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">상세 요구사항</label>
+                            <textarea id="message" name="message" rows="6" placeholder="프로젝트에 대한 상세한 설명이나 특별히 요청하실 사항을 입력해주세요."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="privacy" required>
+                                <span>개인정보 수집 및 이용에 동의합니다. <span class="required">*</span></span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">견적 문의하기</button>
+                    </form>
+
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- 우측: 연락처 정보 -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <h3>연락처 정보</h3>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>전화</h4>
+                                <p>02-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>이메일</h4>
+                                <p>info@premiuminterior.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>주소</h4>
+                                <p>서울시 강남구 테헤란로 123<br>프리미엄타워 10층</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>운영시간</h4>
+                                <p>평일 09:00 - 18:00<br>주말 및 공휴일 휴무</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-process-card">
+                        <h3>상담 프로세스</h3>
+                        <div class="process-item">
+                            <div class="process-number">1</div>
+                            <div class="process-text">
+                                <h4>문의 접수</h4>
+                                <p>견적 문의 폼 작성</p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-number">2</div>
+                            <div class="process-text">
+                                <h4>담당자 배정</h4>
+                                <p>24시간 내 전담 담당자 배정</p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-number">3</div>
+                            <div class="process-text">
+                                <h4>상담 및 견적</h4>
+                                <p>현장 방문 또는 화상 상담</p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-number">4</div>
+                            <div class="process-text">
+                                <h4>계약 및 시공</h4>
+                                <p>계약 후 일정에 맞춰 시공</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="response-guarantee">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>24시간 내 답변 보장</h4>
+                            <p>영업일 기준 24시간 내에 담당자가 연락드립니다</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <p class="section-subtitle">궁금하신 내용을 미리 확인하세요</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> 견적은 얼마나 걸리나요?</h3>
+                    <p>현장 방문 후 3~5일 내로 상세 견적서를 제공해드립니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> 공사 기간은 어느 정도인가요?</h3>
+                    <p>프로젝트 규모에 따라 다르지만, 평균 30일 내외입니다. 정확한 일정은 상담 시 안내드립니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> 지방도 시공 가능한가요?</h3>
+                    <p>네, 전국 어디든 시공 가능합니다. 원거리의 경우 교통비가 추가될 수 있습니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> A/S 기간은 어떻게 되나요?</h3>
+                    <p>완공 후 1년간 무상 A/S를 제공하며, 24시간 긴급 대응 시스템을 운영합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PREMIUM INTERIOR</h3>
+                    <p>기업 공간 전문 인테리어 파트너</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">회사소개</a></li>
+                        <li><a href="services.html">서비스</a></li>
+                        <li><a href="portfolio.html">포트폴리오</a></li>
+                        <li><a href="recruiting.html">채용정보</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li><a href="services.html#office">오피스 인테리어</a></li>
+                        <li><a href="services.html#retail">리테일/프랜차이즈</a></li>
+                        <li><a href="services.html#fnb">F&B 체인</a></li>
+                        <li><a href="services.html#medical">병원/클리닉</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 02-1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@premiuminterior.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 서울시 강남구 테헤란로 123</li>
+                        <li><i class="fas fa-clock"></i> 평일 09:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Interior. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
